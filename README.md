@@ -6,6 +6,8 @@ Program counts cars on a video stream and uploads the counts to Thingspeak.com. 
 
 In Debug Mode (postfix -d) a file output.avi is saved with marked image crop.
 
+The source code in [visualize_traffic_counter_24h.m](https://github.com/buhln/car_counter/blob/30fc1195ae2e42e8c4d0be5fabd5805bf0425373/visualize_traffic_counter_24h.m) is the visualization code vor Thingspeak.com.
+
 ## Usage
 Clone repo to your Raspberry Pi and insert your Thingspeak.com write-key `key = "HERE_YOUR_THINGSPEAK_WRITEKEY"`. Run `python3 car_counter_BGsub.py -d` first to capture a video `output.avi` from the camera. After that define the picture crop to resize the detection zone. X1, X2, Y1, Y2 are the corenerstones of the detection zone in px. Eg.:
 ```
